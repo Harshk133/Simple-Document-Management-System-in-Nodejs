@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Add Document</title>
+</head>
+<body>
+  <h1>Add Document</h1>
+  <form action="/add-document" method="post">
+    <label for="enrollmentNo">Enrollment No:</label>
+    <input type="text" id="enrollmentNo" name="enrollmentNo" required>
+    
+    <label for="documentName">Document Name:</label>
+    <input type="text" id="documentName" name="documentName" required>
+    
+    <label for="documentType">Document Type:</label>
+    <input type="text" id="documentType" name="documentType" required>
+    
+    <button type="submit">Add Document</button>
+  </form>
+</body>
+</html>
