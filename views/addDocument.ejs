@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>Add Document</h1>
-  <form action="/add-document" method="post">
+  <form action="/add-document" method="post" enctype="multipart/form-data">
     <label for="enrollmentNo">Enrollment No:</label>
     <input type="text" id="enrollmentNo" name="enrollmentNo" required>
     
@@ -17,7 +17,11 @@
     
     <label for="documentType">Document Type:</label>
     <input type="text" id="documentType" name="documentType" required>
-    
+
+    <!-- Input for file upload -->
+    <label for="documentFile">Choose File:</label>
+    <input type="file" id="documentFile" name="documentFile" accept=".pdf, .docx" required>
+
     <button type="submit">Add Document</button>
   </form>
 </body>
